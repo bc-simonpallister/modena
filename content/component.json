@@ -1,0 +1,259 @@
+{
+  "components": [
+    {
+      "id": "accordion",
+      "name": "Accordion",
+      "icon": "display-fullwidth",
+      "parameters": [
+        {
+          "id": "entry",
+          "name": "Content Entry",
+          "type": "contentfulEntry",
+          "typeConfig": {
+            "allowedContentTypes": {
+              "benefits": {
+                "id": "benefits",
+                "name": "Benefits"
+              }
+            }
+          }
+        }
+      ],
+      "slots": [],
+      "titleParameter": "entry",
+      "canBeComposition": false,
+      "created": "2021-07-28T11:47:01.672774+00:00",
+      "updated": "2021-08-23T11:14:36.094505+00:00"
+    },
+    {
+      "id": "featuredProduct",
+      "name": "Featured Product",
+      "icon": "components",
+      "parameters": [
+        {
+          "id": "product",
+          "name": "Product",
+          "type": "bigcommerceProduct",
+          "typeConfig": null
+        }
+      ],
+      "slots": [],
+      "titleParameter": "",
+      "canBeComposition": false,
+      "created": "2021-07-28T11:49:29.362154+00:00",
+      "updated": "2021-08-17T06:36:03.767696+00:00"
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "icon": "border-bottom",
+      "parameters": [],
+      "slots": [],
+      "titleParameter": "",
+      "canBeComposition": false,
+      "created": "2021-07-28T11:50:08.820061+00:00",
+      "updated": "2021-08-23T11:19:43.805069+00:00"
+    },
+    {
+      "id": "header",
+      "name": "Header",
+      "icon": "border-top",
+      "parameters": [],
+      "slots": [],
+      "titleParameter": "",
+      "canBeComposition": false,
+      "created": "2021-07-28T11:50:39.67617+00:00",
+      "updated": "2021-08-23T11:19:56.464996+00:00"
+    },
+    {
+      "id": "hero",
+      "name": "Hero",
+      "icon": "calendar-two",
+      "parameters": [
+        {
+          "id": "entry",
+          "name": "Content Entry",
+          "type": "contentfulEntry",
+          "typeConfig": {
+            "allowedContentTypes": {
+              "hero": {
+                "id": "hero",
+                "name": "Hero"
+              }
+            }
+          }
+        }
+      ],
+      "slots": [],
+      "titleParameter": "entry",
+      "canBeComposition": false,
+      "created": "2021-07-28T11:50:56.146306+00:00",
+      "updated": "2021-08-23T11:14:41.529634+00:00"
+    },
+    {
+      "id": "productCollectionContainer",
+      "name": "Product Collection Container",
+      "icon": "list",
+      "parameters": [
+        {
+          "id": "tag",
+          "name": "Tag",
+          "type": "text",
+          "typeConfig": null
+        },
+        {
+          "id": "heading",
+          "name": "Heading",
+          "type": "text",
+          "typeConfig": null
+        }
+      ],
+      "slots": [
+        {
+          "id": "products",
+          "name": "Products",
+          "maxComponents": 3,
+          "allowedComponents": [
+            "productCollectionItem"
+          ],
+          "inheritAllowedComponents": false
+        }
+      ],
+      "titleParameter": "",
+      "canBeComposition": false,
+      "created": "2021-07-28T11:52:12.537688+00:00",
+      "updated": "2021-08-23T11:20:37.404377+00:00"
+    },
+    {
+      "id": "productCollectionItem",
+      "name": "Product Collection Item",
+      "icon": "view-list",
+      "parameters": [
+        {
+          "id": "displayName",
+          "name": "Display Name",
+          "type": "text",
+          "typeConfig": null
+        },
+        {
+          "id": "product",
+          "name": "Product",
+          "type": "bigcommerceProduct",
+          "typeConfig": null
+        }
+      ],
+      "slots": [],
+      "titleParameter": "",
+      "canBeComposition": false,
+      "created": "2021-07-28T11:53:38.186598+00:00",
+      "updated": "2021-08-23T11:20:40.297896+00:00"
+    },
+    {
+      "id": "productCollectionList",
+      "name": "Product Collection List",
+      "icon": "layout-list",
+      "parameters": [
+        {
+          "id": "heading",
+          "name": "Heading",
+          "type": "text",
+          "typeConfig": null
+        },
+        {
+          "id": "tag",
+          "name": "Tag",
+          "type": "text",
+          "typeConfig": null
+        },
+        {
+          "id": "products",
+          "name": "Products",
+          "type": "bigcommerceProductList",
+          "typeConfig": null
+        }
+      ],
+      "slots": [],
+      "titleParameter": "",
+      "canBeComposition": false,
+      "created": "2021-07-28T11:55:00.786701+00:00",
+      "updated": "2021-08-23T11:20:43.564222+00:00"
+    },
+    {
+      "id": "productLandingPage",
+      "name": "Product Landing Page",
+      "icon": "website",
+      "parameters": [
+        {
+          "id": "pageTitle",
+          "name": "Page Title",
+          "type": "text",
+          "typeConfig": null
+        }
+      ],
+      "slots": [
+        {
+          "id": "header",
+          "name": "Header",
+          "maxComponents": 1,
+          "allowedComponents": [
+            "header"
+          ],
+          "inheritAllowedComponents": false
+        },
+        {
+          "id": "content",
+          "name": "Content",
+          "allowedComponents": [
+            "$test",
+            "accordion",
+            "featuredProduct",
+            "hero",
+            "$personalization",
+            "productCollectionContainer",
+            "productCollectionList",
+            "story"
+          ],
+          "inheritAllowedComponents": false
+        },
+        {
+          "id": "footer",
+          "name": "Footer",
+          "maxComponents": 1,
+          "allowedComponents": [
+            "footer"
+          ],
+          "inheritAllowedComponents": false
+        }
+      ],
+      "titleParameter": "pageTitle",
+      "canBeComposition": true,
+      "created": "2021-07-28T11:56:55.188671+00:00",
+      "updated": "2021-08-23T11:21:48.983178+00:00"
+    },
+    {
+      "id": "story",
+      "name": "Story",
+      "icon": "ericsson",
+      "parameters": [
+        {
+          "id": "entry",
+          "name": "Content Entry",
+          "type": "contentfulEntry",
+          "typeConfig": {
+            "allowedContentTypes": {
+              "story": {
+                "id": "story",
+                "name": "Story"
+              }
+            }
+          }
+        }
+      ],
+      "slots": [],
+      "titleParameter": "entry",
+      "canBeComposition": false,
+      "created": "2021-07-28T11:56:05.438944+00:00",
+      "updated": "2021-08-23T11:14:48.558655+00:00"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+name = "modena"
+account_id = "YOUR ACCOUNT ID"
+type = "webpack"
+workers_dev = true
+route = ""
+zone_id = ""
+webpack_config = "cloudflare.webpack.config.js"
+
+[site]
+bucket = "./out"
+entry-point = "./"

@@ -1,0 +1,310 @@
+{
+  "compositions": [
+    {
+      "composition": {
+        "_id": "9efad0cf-0689-4e2b-96b6-97bf99b4369c",
+        "type": "productLandingPage",
+        "_name": "Modena",
+        "_slug": "/landing",
+        "slots": {
+          "footer": [
+            {
+              "type": "footer",
+              "parameters": {}
+            }
+          ],
+          "header": [
+            {
+              "type": "header",
+              "parameters": {}
+            }
+          ],
+          "content": [
+            {
+              "type": "$personalization",
+              "slots": {
+                "pz": [
+                  {
+                    "type": "hero",
+                    "parameters": {
+                      "entry": {
+                        "type": "contentfulEntry",
+                        "value": "7lHSjrW2vOIhVmDXS3knNi"
+                      }
+                    }
+                  },
+                  {
+                    "type": "hero",
+                    "parameters": {
+                      "entry": {
+                        "type": "contentfulEntry",
+                        "value": "5zl0KOY8ThvM5YJj4EuWNu"
+                      },
+                      "intentTag": {
+                        "type": "intentTag",
+                        "value": {
+                          "intents": {
+                            "men": {
+                              "str": 50
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "hero",
+                    "parameters": {
+                      "entry": {
+                        "type": "contentfulEntry",
+                        "value": "2SO9Y7pfe48FjW4ReY4OFg"
+                      },
+                      "intentTag": {
+                        "type": "intentTag",
+                        "value": {
+                          "intents": {
+                            "women": {
+                              "str": 50
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "hero",
+                    "parameters": {
+                      "entry": {
+                        "type": "contentfulEntry",
+                        "value": "2UzV4wTVJJIku1WTpV3jYV"
+                      },
+                      "intentTag": {
+                        "type": "intentTag",
+                        "value": {
+                          "intents": {
+                            "menHipster": {
+                              "str": 50
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "hero",
+                    "parameters": {
+                      "entry": {
+                        "type": "contentfulEntry",
+                        "value": "3f6dK8U9kY04A4CnxNC5Nr"
+                      },
+                      "intentTag": {
+                        "type": "intentTag",
+                        "value": {
+                          "intents": {
+                            "womenLuxury": {
+                              "str": 50
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "parameters": {
+                "trackingEventName": {
+                  "type": "text",
+                  "value": "Modena Hero P13N"
+                }
+              }
+            },
+            {
+              "type": "$personalization",
+              "slots": {
+                "pz": [
+                  {
+                    "type": "story",
+                    "parameters": {
+                      "entry": {
+                        "type": "contentfulEntry",
+                        "value": "6jOqXJxoBdVr1aBqMjBbP1"
+                      }
+                    }
+                  },
+                  {
+                    "type": "story",
+                    "parameters": {
+                      "entry": {
+                        "type": "contentfulEntry",
+                        "value": "VwtvTm6NbAjzW9wmEGTOx"
+                      },
+                      "intentTag": {
+                        "type": "intentTag",
+                        "value": {
+                          "intents": {
+                            "women": {
+                              "str": 50
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "parameters": {
+                "trackingEventName": {
+                  "type": "text",
+                  "value": "Modena Story P13N"
+                }
+              }
+            },
+            {
+              "type": "$test",
+              "slots": {
+                "test": [
+                  {
+                    "type": "featuredProduct",
+                    "parameters": {
+                      "product": {
+                        "type": "bigcommerceProduct",
+                        "value": "154"
+                      }
+                    }
+                  },
+                  {
+                    "type": "featuredProduct",
+                    "parameters": {
+                      "product": {
+                        "type": "bigcommerceProduct",
+                        "value": "157"
+                      }
+                    }
+                  }
+                ]
+              },
+              "parameters": {
+                "test": {
+                  "type": "testSelect",
+                  "value": "Modena Fall 2021 bag test"
+                }
+              }
+            },
+            {
+              "type": "$personalization",
+              "slots": {
+                "pz": [
+                  {
+                    "type": "productCollectionList",
+                    "parameters": {
+                      "tag": {
+                        "type": "text",
+                        "value": "Look no further!"
+                      },
+                      "heading": {
+                        "type": "text",
+                        "value": "Mixed Products - Fall 2021"
+                      },
+                      "products": {
+                        "type": "bigcommerceProductList",
+                        "value": [
+                          "156",
+                          "160",
+                          "165"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "productCollectionList",
+                    "parameters": {
+                      "tag": {
+                        "type": "text",
+                        "value": "Don't miss out!"
+                      },
+                      "heading": {
+                        "type": "text",
+                        "value": "Products for Men - Fall 2021"
+                      },
+                      "products": {
+                        "type": "bigcommerceProductList",
+                        "value": [
+                          "163",
+                          "162",
+                          "167"
+                        ]
+                      },
+                      "intentTag": {
+                        "type": "intentTag",
+                        "value": {
+                          "intents": {
+                            "men": {
+                              "str": 50
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "productCollectionList",
+                    "parameters": {
+                      "tag": {
+                        "type": "text",
+                        "value": "Don't miss out!"
+                      },
+                      "heading": {
+                        "type": "text",
+                        "value": "Products for Women - Fall 2021"
+                      },
+                      "products": {
+                        "type": "bigcommerceProductList",
+                        "value": [
+                          "159",
+                          "158",
+                          "155"
+                        ]
+                      },
+                      "intentTag": {
+                        "type": "intentTag",
+                        "value": {
+                          "intents": {
+                            "women": {
+                              "str": 50
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "parameters": {
+                "trackingEventName": {
+                  "type": "text",
+                  "value": "Product Collection Modena P13N"
+                }
+              }
+            },
+            {
+              "type": "accordion",
+              "parameters": {
+                "entry": {
+                  "type": "contentfulEntry",
+                  "value": "2BM6q63DOIdZAFgkFHXCHV"
+                }
+              }
+            }
+          ]
+        },
+        "parameters": {
+          "pageTitle": {
+            "type": "text",
+            "value": "Modena Landing Page - Fall 2021"
+          }
+        }
+      },
+      "state": 0
+    }
+  ]
+}
